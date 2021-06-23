@@ -1,0 +1,242 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 8,
+    "passes": 8,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-06-23T17:26:10.365Z",
+    "end": "2021-06-23T17:26:26.373Z",
+    "duration": 16008,
+    "testsRegistered": 8,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "87736bf7-9095-4650-a5a7-70e4bd1ee4e8",
+      "title": "",
+      "fullFile": "cypress/integration/swaglabs.js",
+      "file": "cypress/integration/swaglabs.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "a57af463-aca2-4c97-9091-b7f2c2e147af",
+          "title": "Swag Labs page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Login with invalid username",
+              "fullTitle": "Swag Labs page Login with invalid username",
+              "timedOut": null,
+              "duration": 1842,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://www.saucedemo.com/').get('input[id=\"user-name\"]').type(this.data.username1).get('input[id=\"password\"]').type(this.data.password).get('input[id=\"login-button\"]').click().get('.error-message-container').contains('Epic sadface: Username and password do not match any user in this service');",
+              "err": {},
+              "uuid": "7d4b7dd2-da2c-4ba6-9c63-b27575dd4758",
+              "parentUUID": "a57af463-aca2-4c97-9091-b7f2c2e147af",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Login with invalid password",
+              "fullTitle": "Swag Labs page Login with invalid password",
+              "timedOut": null,
+              "duration": 1444,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://www.saucedemo.com/').get('input[id=\"user-name\"]').type(this.data.username).get('input[id=\"password\"]').type(this.data.password1).get('input[id=\"login-button\"]').click();",
+              "err": {},
+              "uuid": "f4d5346a-dd5d-48bf-a9f4-6ddc819d4fbf",
+              "parentUUID": "a57af463-aca2-4c97-9091-b7f2c2e147af",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Login with valid credentials",
+              "fullTitle": "Swag Labs page Login with valid credentials",
+              "timedOut": null,
+              "duration": 988,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://www.saucedemo.com/').get('input[id=\"user-name\"]').type(this.data.username).get('input[id=\"password\"]').type(this.data.password).get('input[id=\"login-button\"]').click();",
+              "err": {},
+              "uuid": "a699156d-0564-46df-b476-b7fd3e12b698",
+              "parentUUID": "a57af463-aca2-4c97-9091-b7f2c2e147af",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Shopping cart tests",
+              "fullTitle": "Swag Labs page Shopping cart tests",
+              "timedOut": null,
+              "duration": 975,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('.shopping_cart_link').click().get('[data-test=continue-shopping]').click().get('[data-test=add-to-cart-sauce-labs-backpack]').click().get('[data-test=add-to-cart-sauce-labs-fleece-jacket]').click().get('.shopping_cart_link').click().get('[data-test=checkout]').click().get('[data-test=cancel]').click().get('[data-test=remove-sauce-labs-fleece-jacket]').click().get('[data-test=continue-shopping]').click().get('.shopping_cart_badge').contains('1');",
+              "err": {},
+              "uuid": "53184687-ece4-447c-a74a-ceec4ad2dd2b",
+              "parentUUID": "a57af463-aca2-4c97-9091-b7f2c2e147af",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Check text fields",
+              "fullTitle": "Swag Labs page Check text fields",
+              "timedOut": null,
+              "duration": 242,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('#item_4_title_link > .inventory_item_name').contains('Sauce Labs Backpack').get('.footer_copy').contains('© 2021 Sauce Labs. All Rights Reserved. Terms of Service | Privacy Policy').get('#item_3_title_link > .inventory_item_name').click().get('.inventory_details_desc').contains('This classic Sauce Labs t-shirt is perfect to wear when cozying up to your keyboard to automate a few tests. Super-soft and comfy ringspun combed cotton.').go('back');",
+              "err": {},
+              "uuid": "36aba8f7-3427-4b56-a066-8cbc0e3ca990",
+              "parentUUID": "a57af463-aca2-4c97-9091-b7f2c2e147af",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Sort products",
+              "fullTitle": "Swag Labs page Sort products",
+              "timedOut": null,
+              "duration": 163,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('[data-test=product_sort_container]').select('lohi');",
+              "err": {},
+              "uuid": "e120218a-484a-4b6a-9ba3-b7ee89e10a55",
+              "parentUUID": "a57af463-aca2-4c97-9091-b7f2c2e147af",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Social media links",
+              "fullTitle": "Swag Labs page Social media links",
+              "timedOut": null,
+              "duration": 7833,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('.social_twitter > a').invoke('removeAttr', 'target').should('have.attr', 'href', 'https://twitter.com/saucelabs').click().go('back').get('.social_facebook > a').invoke('removeAttr', 'target').should('have.attr', 'href', 'https://www.facebook.com/saucelabs').click().go('back').get('.social_linkedin > a').invoke('removeAttr', 'target').should('have.attr', 'href', 'https://www.linkedin.com/company/sauce-labs/').click().go('back');",
+              "err": {},
+              "uuid": "1cb14876-1120-412c-99a8-e1401910f013",
+              "parentUUID": "a57af463-aca2-4c97-9091-b7f2c2e147af",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Logout",
+              "fullTitle": "Swag Labs page Logout",
+              "timedOut": null,
+              "duration": 511,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('button[id=\"react-burger-menu-btn\"]').click().get('a[id=\"logout_sidebar_link\"]').click();",
+              "err": {},
+              "uuid": "313ebbde-fb5f-4a1a-8910-c79eb82fa3ed",
+              "parentUUID": "a57af463-aca2-4c97-9091-b7f2c2e147af",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "7d4b7dd2-da2c-4ba6-9c63-b27575dd4758",
+            "f4d5346a-dd5d-48bf-a9f4-6ddc819d4fbf",
+            "a699156d-0564-46df-b476-b7fd3e12b698",
+            "53184687-ece4-447c-a74a-ceec4ad2dd2b",
+            "36aba8f7-3427-4b56-a066-8cbc0e3ca990",
+            "e120218a-484a-4b6a-9ba3-b7ee89e10a55",
+            "1cb14876-1120-412c-99a8-e1401910f013",
+            "313ebbde-fb5f-4a1a-8910-c79eb82fa3ed"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 13998,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "reporterEnabled": "mochawesome",
+        "mochawesomeReporterOptions": {
+          "reportDir": "mochawesome-report",
+          "quite": true,
+          "overwrite": false,
+          "html": false,
+          "json": true
+        }
+      },
+      "version": "5.2.0"
+    }
+  }
+}

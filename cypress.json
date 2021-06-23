@@ -1,0 +1,14 @@
+{
+  "chromeWebSecurity": false,
+  "reporter": "../node_modules/mochawesome/src/mochawesome.js",
+    "reporterOptions": {
+        "reporterEnabled": "mochawesome",
+        "mochawesomeReporterOptions": {
+            "reportDir": "mochawesome-report",
+            "quite": true,
+            "overwrite": false,
+            "html": false,
+            "json": true
+        }
+    }
+}
